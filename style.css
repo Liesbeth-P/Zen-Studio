@@ -5,7 +5,7 @@
     - Proxima Nova - Medium
 - Colors:
     - beige - F8F6F4
-    - pink - FFA995
+    - pink - #f59186
 - Map: [https://snazzymaps.com/style/115413/light-and-beige](https://snazzymaps.com/style/115413/light-and-beige)
 
 */
@@ -58,10 +58,8 @@ body {
 
 .bg-light    { background-color: #F8F6F4;  }
 .bg-featured { background-color: #018ca2;  }
-.bg-dark     { background-color: #24282B;  }
 
-.light-text { color: white; } 
-
+.text-featured { color: #f59186; } 
 
 .left   { text-align: left; }
 .center { text-align: center; }
@@ -69,6 +67,45 @@ body {
 
 
 /* General typography & universal styles  */
+body { 
+    font-family: 'Baskervville', serif;
+    color: rgb(65,60,60);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Didot', serif;
+    line-height: 1; 
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+
+p {
+    line-height: 1.4; 
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+ul { margin-left: 1rem; }
+li { padding-left: .5rem;}
+
+h1:last-child, 
+h2:last-child, 
+h3:last-child, 
+h4:last-child, 
+h5:last-child, 
+h6:last-child, 
+p:last-child {
+    margin-bottom: 0;
+}
+
+.text-lg  { font-size: 3.5rem;  }
+.text-xl  { font-size: 4.5rem; }
+.text-xxl { font-size: 8.5rem; }
+.text-bold { font-weight: bold; }
 
 /* Header & Footer */
 
@@ -78,4 +115,19 @@ body {
     background-size: cover;
     background-position: center;
     background-image: url('/images/zen-studio-1.jpg');
+}
+
+.bg-stone { background-image: url('/images/stone.png'); }
+
+.bg-leaves { 
+    background-image: url('/images/zen-studio-1.jpg');
+    background-position: 50% 31%;
+}
+
+.bg-venue { background-image: url('/images/zen-studio-3.jpg'); }
+.bg-map { background-image: url('/images/light-colored-map.png'); } 
+
+.shape-teardrop {
+    border-radius: 20rem;
+    border-bottom-right-radius: 0;
 }
